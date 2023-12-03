@@ -4,121 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Portfolio.css" />
-    <script defer src="./Portfolio.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <main>
-      <ul class="slider">
-        <li
-          class="item"
-          style="
-            background-image: url('../assets/Images/7.jpg');
-          "
-        >
-          <div class="content">
-              <h2 class="title">"Lossless Youths"</h2>
-              <p class="description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-                  fuga voluptatum, iure corporis inventore praesentium nisi. Id
-                  laboriosam ipsam enim.
-                </p>
-            <button class="return"><a href="../index.html">Return Home</a></button>
-          </div>
-        </li>
-        <li
-          class="item"
-          style="background-image: url('../assets/Images/2.jpg')"
-        >
-          <div class="content">
-            <h2 class="title">"Estrange Bond"</h2>
-            <p class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              fuga voluptatum, iure corporis inventore praesentium nisi. Id
-              laboriosam ipsam enim.
-            </p>
-            <button class="return"><a href="../index.html">Return Home</a></button>
-            
-          </div>
-        </li>
-        <li
-          class="item"
-          style="
-            background-image: url('../assets/Images/3.jpg');
-          "
-        >
-          <div class="content">
-            <h2 class="title">"The Gate Keeper"</h2>
-            <p class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              fuga voluptatum, iure corporis inventore praesentium nisi. Id
-              laboriosam ipsam enim.
-            </p>
-            <button class="return"><a href="../index.html">Return Home</a></button>
-          </div>
-        </li>
-        <li
-          class="item"
-          style="
-            background-image: url('../assets/Images/4.jpg');
-          "
-        >
-          <div class="content">
-            <h2 class="title">"Last Trace Of Us"</h2>
-            <p class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              fuga voluptatum, iure corporis inventore praesentium nisi. Id
-              laboriosam ipsam enim.
-            </p>
-            <button class="return"><a href="../index.html">Return Home</a></button>
-          </div>
-        </li>
-        <li
-          class="item"
-          style="
-            background-image: url('../assets/Images/5.jpg');
-          "
-        >
-          <div class="content">
-            <h2 class="title">"Urban Decay"</h2>
-            <p class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              fuga voluptatum, iure corporis inventore praesentium nisi. Id
-              laboriosam ipsam enim.
-            </p>
-            <button class="return"><a href="../index.html">Return Home</a></button>
-          </div>
-        </li>
-        <li
-          class="item"
-          style="
-            background-image: url('../assets/Images/6.jpg');
-          "
-        >
-          <div class="content">
-            <h2 class="title">"The Migration"</h2>
-            <p class="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              fuga voluptatum, iure corporis inventore praesentium nisi. Id
-              laboriosam ipsam enim.
-            </p>
-            <button class="return"><a href="../index.html">Return Home</a></button>
-          </div>
-        </li>
-      </ul>
-      <nav class="nav">
-        <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
-        <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
-      </nav>
-    </main>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="../index.html">Aaditya</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a
+              href="./assets/cv/Aaditya Kshetri.pdf"
+              download="Aaditya Kshetri"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Résumé
+            </a>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <div class="container">
+      <div
+        class="box box-1"
+        style="--img: url(../assets/images/1.jpg)"
+        data-text="That's me"
+      ></div>
+      <div
+        class="box box-2"
+        style="--img: url(../assets/images/7.jpg)"
+        data-text="That's me again"
+      ></div>
+      <div
+        class="box box-3"
+        style="--img: url(../assets/images/3.jpg)"
+        data-text="Of! you can recognize, right?"
+      ></div>
+      <div
+        class="box box-4"
+        style="--img: url(../assets/images/4.jpg)"
+        data-text="Hum hai"
+      ></div>
+      <div
+        class="box box-5"
+        style="--img: url(../assets/images/5.jpg)"
+        data-text="Ye bhi, hum hai"
+      ></div>
+    </div>
+
+    <div class="small-container">
+
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/7.jpg" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/1.jpg" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/3.jpg" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/4.jpg" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/5.jpg" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/2.jpg" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/6.jpg" alt="">
+      </div>
+      
+      <div class="imgContainer">
+        <img class="smallImg" src="../assets/Images/8.jpg" alt="">
+      </div>
+
+    </div>
   </body>
 </html>
