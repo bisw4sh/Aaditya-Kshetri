@@ -1,8 +1,13 @@
 body {
+  position: relative;
   background-color: #faf5ff;
 }
 
-/*sass variables used*/
+a{
+  text-decoration: none;
+  color: unset;
+}
+
 /*site container*/
 .wrapper {
   height: 100vh;
@@ -75,17 +80,7 @@ input[type="submit"] {
   border-radius: 5px;
   outline: none;
   border: none;
-  background-image: -webkit-gradient(
-    linear,
-    0 0,
-    0 100%,
-    from(#28d2de),
-    to(#1a878f)
-  );
-  background-image: -webkit-linear-gradient(#28d2de 0%, #1a878f 100%);
-  background-image: -moz-linear-gradient(#28d2de 0%, #1a878f 100%);
-  background-image: -o-linear-gradient(#28d2de 0%, #1a878f 100%);
-  background-image: linear-gradient(#28d2de 0%, #1a878f 100%);
+  background-color: #9333ea;
   font: 14px Oswald;
   color: #fff;
   text-transform: uppercase;
@@ -127,3 +122,17 @@ input[type="submit"]:hover {
   right: 3%;
   top: 0px;
 }
+
+.links-wrapper{
+position: fixed;
+bottom: 0;
+left:50%;
+font-size: 2rem;
+transform: translate(-50%, -50%);
+}
+
+.links-wrapper > *:hover {
+cursor: pointer;
+color:#9333ea;
+}
+

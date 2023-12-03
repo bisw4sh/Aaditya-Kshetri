@@ -20,3 +20,9 @@ document
     // Open default mail application
     window.location.href = mailtoLink;
   });
+
+  document.
+  querySelector('.mail-icon')
+  .addEventListener('click', () => {
+    document.getElementById('name').focus()
+  })
