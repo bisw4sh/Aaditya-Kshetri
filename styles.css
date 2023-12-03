@@ -42,18 +42,36 @@ nav {
   justify-content: space-between;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
 nav .logo a {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
   transition: 0.3s;
 }
+
 nav .logo a:hover {
-  color: var(--primary-color-dark);
+  background-image: linear-gradient(to right, #ff00cc, #333399);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari and older versions of Chrome */
+  color: transparent;
+  transition: colorChange ease-in-out 2s;
 }
 
 nav .checkbox {
   display: none;
+}
+
+@keyframes colorChange {
+  0%   {filter: hue-rotate(0deg);}
+  25%  {filter: hue-rotate(180deg);}
+  50%  {filter: hue-rotate(360deg);}
+  75%  {filter: hue-rotate(1800deg);}
+  100% {filter: hue-rotate(0deg);}
 }
 
 nav input {
@@ -83,7 +101,7 @@ ul li a {
 }
 
 ul li a:hover {
-  border-top-color: var(--secondary-color);
+  /* border-top-color: var(--secondary-color); */
   border-bottom-color: var(--secondary-color);
   color: var(--secondary-color);
 }
@@ -174,8 +192,8 @@ ul li a:hover {
 }
 
 .image img {
-  width: min(25rem, 90%);
-  border-radius: 100%;
+  width: min(20rem, 90%);
+  border-radius: 40%;
 }
 
 @media (width < 750px) {
