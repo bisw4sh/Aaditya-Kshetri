@@ -3,30 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Publications - Aaditya Kshetri</title>
-    <link rel="stylesheet" href="Publication.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Publication.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Publications and Articles</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>My Publications</h1>
-            <p>Explore my latest published work. Click on the titles to view or download the PDF files.</p>
-        </header>
-        
-        <section class="publications-list">
-            <div class="publication-item">
-                <h2><a href="Publications/Egovernance.pdf" target="_blank">Knowledge and Application of E-Governance in Pokhara-27</a></h2>
-                <p>This research finds the level of knowledge and application of people towards egovernance..</p>
+    <nav>
+        <div class="nav__content">
+          <div class="logo"><a href="../index.html">Aaditya</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li>
+              <a
+                href="./assets/cv/Aaditya Kshetri.pdf"
+                download="Aaditya Kshetri"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Résumé
+              </a>
+            </li>
+            <li><a href="./Portfolio.html">Portfolio</a></li>
+            <li><a href="./Publication.html">Publications</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+            
+          </ul>
+        </div>
+        </nav>
+
+    <!-- Flashcard Layout for Articles and Publications -->
+    <section class="flashcard-container">
+        <h1>Articles</h1>
+        <div class="flashcard-row">
+            <div class="flashcard">
+                <img src="Publications/thumb1.png" alt="Article 1">
+                <h3>Knowledge and Application of E-Governance in Pokhara-27</h3>
+                <p>(Research)A Research done to assess the knowledge and application of E-governance in Pokhara-27</p>
+                <a href="Publications/Egovernance.pdf" class="read-more">Read More</a>
             </div>
-            
-            <!-- <div class="publication-item">
-                <h2><a href="publications/paper2.pdf" target="_blank">Title of Publication 2</a></h2>
-                <p>Brief description of this publication.</p>
-            </div> --> 
-            
-            <!-- Add more publications as needed -->
-        </section>
-    </div>
+            <div class="flashcard">
+                <img src="Publications/ent.png" alt="Article 2">
+                <h3>Free speech and Musk’s agenda:It’s impact on Nepal.</h3>
+                <p>An article on Elon Musk's Agenda of Free Speech with his acquisation of twitter
+                </p>
+                <a href="article2.html" class="read-more">Read More</a>
+            </div>
+            <!-- Add more article flashcards as needed -->
+        </div>
+
+        <!--<h2>Publications</h2>
+        <div class="flashcard-row">
+            <div class="flashcard">
+                <img src="path/to/publication-thumbnail1.jpg" alt="Publication 1">
+                <h3>Publication Title 1</h3>
+                <p>Short description of the publication...</p>
+                <a href="Publications/Egovernance.pdf" class="read-more">Read More</a>
+            </div>
+            <div class="flashcard">
+                <img src="path/to/publication-thumbnail2.jpg" alt="Publication 2">
+                <h3>Publication Title 2</h3>
+                <p>Short description of the publication...</p>
+                <a href="publication2.pdf" class="read-more">Read More</a>
+            </div>-->
+            <!-- Add more publication flashcards as needed -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

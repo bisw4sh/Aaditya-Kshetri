@@ -1,95 +1,89 @@
-/* General Styling */
-* {
+/* General Styles */
+body, html {
+    background-color: #f2e5ff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+/* Header Menu */
+header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2 {
     color: #333;
+    text-align: center;
+    margin: 20px 0;
 }
 
-.container {
+/* Flashcard Container */
+.flashcard-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header Styling */
-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    background: linear-gradient(45deg, #007bff, #00d4ff);
-    color: white;
-    border-radius: 10px;
-}
-
-header h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-/* Publication List Styling */
-.publications-list {
+.flashcard-row {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.publication-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+.flashcard {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
 }
 
-.publication-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+.flashcard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-.publication-item h2 a {
-    color: #007bff;
+.flashcard h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.flashcard p {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.flashcard .read-more {
     text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 500;
+    color: #3498db;
+    display: inline-block;
+    margin: 10px 0 20px;
 }
 
-.publication-item h2 a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-.publication-item p {
-    font-size: 1.1em;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 2.2em;
-    }
-
-    .publication-item h2 a {
-        font-size: 1.3em;
-    }
-
-    .publication-item p {
-        font-size: 1em;
-    }
+.flashcard:hover {
+    transform: scale(1.05);
 }

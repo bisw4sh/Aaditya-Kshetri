@@ -11,7 +11,7 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  background-color: #dab9fa;
+  background-color: #f2e5ff;
 }
 
 .container {
