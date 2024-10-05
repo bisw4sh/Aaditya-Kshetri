@@ -14,18 +14,7 @@ const articles = [
         image: "Publications/thumb1.png",
         description: "(Research)To assess the knowledge and application of E-governance in Pokhara-27"
     },
-    {
-        title: "CSS Tips and Tricks for Responsive Design",
-        link: "article3.html",
-        image: "path/to/image3.jpg",
-        description: "Discover tips and tricks for creating responsive and beautiful web pages using CSS."
-    },
-    {
-        title: "Exploring the Power of HTML5",
-        link: "article4.html",
-        image: "path/to/image4.jpg",
-        description: "HTML5 offers a range of new features and capabilities for web developers."
-    }
+    
 ];
 
 // Function to dynamically load and display suggested articles
