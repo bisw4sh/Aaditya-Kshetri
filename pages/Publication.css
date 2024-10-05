@@ -52,8 +52,8 @@ h1, h2 {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 250px;
-    margin: 15px;
+    width: 350px;
+    margin: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;

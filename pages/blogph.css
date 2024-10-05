@@ -1,0 +1,186 @@
+/* General Styles */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Menu */
+header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Content Container: Main Blog and Sidebar */
+.content-container {
+    display: flex; /* Use Flexbox to align main content and sidebar */
+    justify-content: space-between; /* Space between content and sidebar */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Main Blog Content */
+.blog-content {
+    flex: 3; /* Take 3 parts of the available width */
+    margin-right: 20px; /* Space between blog and sidebar */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Wrapper to Center Image */
+.image-wrapper {
+    text-align: center; /* Center the image */
+}
+
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: inline-block; /* Ensures image is inline for centering */
+}
+
+/* Sidebar for Suggested Articles */
+.sidebar {
+    flex: 1; /* Take 1 part of the available width */
+    width: 300px; /* Set a fixed width for the sidebar */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Sticky position to keep sidebar visible when scrolling */
+    top: 20px; /* Stick the sidebar 20px from the top */
+    align-self: flex-start; /* Align sidebar to top */
+}
+
+/* Sidebar Header */
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Suggested Articles Styling */
+.suggested-article {
+    margin-bottom: 15px;
+}
+
+.suggested-article a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.suggested-article a:hover {
+    color: #2980b9;
+}
+
+/* Blog Title and Meta Information */
+.blog-title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog-meta {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design: For smaller screens, stack sidebar and content */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack sidebar below main content */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        margin-top: 20px; /* Add spacing on top of sidebar */
+    }
+
+    .blog-content {
+        width: 100%; /* Full width for content */
+    }
+}
+/* Sidebar Flashcard Styles */
+.suggested-flashcard {
+    display: flex; /* Align image and content horizontally */
+    flex-direction: row; /* Row layout for thumbnail and text */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Add hover effect */
+}
+
+.suggested-flashcard:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.suggested-thumbnail {
+    width: 60px; /* Thumbnail size */
+    height: 60px;
+    border-radius: 50%; /* Circular thumbnail */
+    margin-right: 15px; /* Space between image and content */
+}
+
+.suggested-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.suggested-title {
+    font-size: 16px;
+    margin: 0;
+    color: #3498db; /* Title color */
+}
+
+.suggested-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.suggested-title a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.suggested-description {
+    font-size: 12px;
+    color: #777;
+    margin: 5px 0 0;
+}

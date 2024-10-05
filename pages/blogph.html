@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="blogph.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Reader</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+          <div class="logo"><a href="../index.html">Aaditya</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li>
+              <a
+                href="./assets/cv/Aaditya Kshetri.pdf"
+                download="Aaditya Kshetri"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Résumé
+              </a>
+            </li>
+            <li><a href="./Portfolio.html">Portfolio</a></li>
+            <li><a href="./Publication.html">Publications</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        </nav>
+      </nav>
+      <h1>Publications and Articles</h1>
+  </header>
+
+  <!-- Main Content and Sidebar Container -->
+  <div class="content-container">
+
+    <!-- Blog Content Section -->
+    <main class="blog-content">
+        <div class="blog-header">
+            <img src="Publications/ent.png" alt="Article Image" class="blog-image">
+            <h2 class="blog-title">Free speech and Musk’s agenda:It’s impact on Nepal</h2>
+            <p class="blog-meta">Published on: March 23, 2022 | Author: Aaditya Kshetri</p>
+        </div>
+
+        <div class="blog-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu, et auctor nulla. Curabitur vehicula, odio at interdum convallis, eros odio malesuada nisi, ac feugiat nunc sapien a velit. Integer fringilla sem ut augue sollicitudin aliquet...</p>
+            <p>Vestibulum nec consequat nisi. Suspendisse potenti. Vivamus non velit quam. Fusce cursus lorem a sapien sollicitudin bibendum...</p>
+
+            <!-- Add More Blog Content Here -->
+        </div>
+
+        <!-- Back to Publications Button -->
+        <div class="back-button">
+            <a href="publication.html" class="btn-back">← Back to Publications</a>
+        </div>
+    </main>
+    <aside class="sidebar">
+        <h3>Suggested Articles</h3>
+        <div id="suggest">
+            <!-- Suggested Articles will be injected here by JavaScript -->
+        </div>
+    </aside>
+</div>
+
+    <!-- Footer (Optional, to match the site's theme) -->
+    <footer>
+        <p>&copy; 2024 Aaditya Kshetri. All rights reserved.</p>
+    </footer>
+
+    <script src="./suggest.js"></script>
+</body>
+</html>
