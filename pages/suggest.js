@@ -2,7 +2,7 @@
 
 // Array of articles to suggest (Sample Data; replace with dynamic data source)
 const articles = [
-    { title: "Article Title 1", link: "article1.html", image: "path/to/image1.jpg", description: "Brief description of Article 1" },
+    { title: "Free speech and Musk’s agenda:It’s impact on Nepal", link: "elontwitter.html", image: "/Publications/ent.png", description: "(Article) Elon Musk's Agenda of Free Speech with his acquisation of twitter" },
     { title: "Article Title 2", link: "article2.html", image: "path/to/image2.jpg", description: "Brief description of Article 2" },
     { title: "Article Title 3", link: "article3.html", image: "path/to/image3.jpg", description: "Brief description of Article 3" },
     { title: "Article Title 4", link: "article4.html", image: "path/to/image4.jpg", description: "Brief description of Article 4" },
