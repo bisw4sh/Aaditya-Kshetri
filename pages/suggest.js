@@ -10,12 +10,12 @@ const articles = [
     },
     {
         title: "Knowledge and Application of E-Governance in Pokhara-27",
-        link: "/Publications/Egovernance.pdf",
+        link: "Publications/Egovernance.pdf",
         image: "Publications/thumb1.png",
         description: "(Research)To assess the knowledge and application of E-governance in Pokhara-27"
     },
     {   title: "Situation of Traditional Method of Curing Illness in Rural Lamjung, Nepal",
-        link: "/Publications/SOTM.pdf",
+        link: "Publications/SOTM.pdf",
         image: "Publications/SOTMOCIL.png",
         description: "(Research)to assess situation of traditional methods of curing illnes on rural Lamjung, Nepal. A Study of Khwolasothar-4 Bhujung."
     },
