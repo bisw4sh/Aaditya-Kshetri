@@ -17,7 +17,7 @@ const articles = [
     {   title: "Situation of Traditional Method of Curing Illness in Rural Lamjung, Nepal",
         link: "/Publications/SOTM.pdf",
         image: "Publications/SOTMOCIL.png",
-        description: "(Research)to assess situation of traditional methods of curing illnes on rural Lamjung, Nepal.A Study of Khwolasothar-4 Bhujung."
+        description: "(Research)to assess situation of traditional methods of curing illnes on rural Lamjung, Nepal. A Study of Khwolasothar-4 Bhujung."
     },
     
 ];  
